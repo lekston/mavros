@@ -122,7 +122,7 @@ public:
 			if (body_frame_orientation_out_desired != "flu")
 				body_frame_orientation_out_desired = "fcu_" + body_frame_orientation_out_desired;
 			else
-				body_frame_orientation_in_desired = "fcu";
+				body_frame_orientation_out_desired = "fcu";
 		}
 		else
 			ROS_FATAL_NAMED("odom", "ODOM: invalid output body frame orientation \"%s\"", body_frame_orientation_out_desired.c_str());
